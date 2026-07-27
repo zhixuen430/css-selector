@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        *{
+            font-family: Arial,sans-serif;
+        }
+        .hero{
+            background-color: steelblue;
+            padding: 60px;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+        #main-title{
+            color: darkred;
+            font-size: 48px;
+        }
+        .subtitle{
+            color: green;
+            font-size: 18px;
+        }
+        h2{
+            color: white;
+            text-align: left;
+        }
+        .description{
+            color: white;
+            font-size: 16px;
+            text-align: left;
+        }
+        .cards{
+            background-color: black;
+            display: flex;
+            gap: 20px;
+            padding: 40px;
+            justify-content: center;
+            width: 100%;
+        }
+        .card{
+            border-radius: 8px;
+            padding: 24px;
+            max-width: 300px;
+            cursor: pointer;
+        }
+        .card-red{
+            background-color: #ff6b6b;
+            border: 2px solid #c0392b;
+        }
+        .card-yellow{
+            background-color: #f9ca24;
+            border: 2px solid #e1b012;
+        }
+        .card-green{
+            background-color: #6ab04c;
+            border: 2px solid #4a7c32;
+        }
+        .hover{
+             transform: translateX(-6px);
+        }
+        .card-red:hover{
+            background-color: #c0392b;
+        }
+        .card-yellow:hover{
+            background-color: #e1b012;
+        }
+        .card-green:hover{
+            background-color: #4a7c32;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 id="main-title">Welcome to Our Site</h1>
+        <p class="subtitle">This is the hero banner.It spans the full width and introduces the page content.</p>
+    </div>
+        <div class="cards">
+                <div class="card card-red">
+                <h2>Card One</h2>
+                <p class="description">This is the first card.It sits in a row alongside the other cards using flexbox.</p>
+                </div>
+                <div class="card card-yellow">
+                <h2>Card Two</h2>
+                <p class="description">This is the second card.Flexbox keeps all cards the same width automatically.</p>
+                </div>
+                <div class="card card-green">
+                <h2>Card Three</h2>
+                <p class="description">This is the third card.The gap property adds space between each card.</p>
+                </div>
+        </div>
+</body>
+</html>
